@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini OCR - Text Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gemini OCR Text Extractor</h1>
+        <p>अपनी PDF, JPG या PNG फाइल अपलोड करें और उसमें से टेक्स्ट निकालें।</p>
+        
+        <form id="ocr-form">
+            <input type="file" id="file-input" accept=".pdf,.jpg,.jpeg,.png" required>
+            <button type="submit">टेक्स्ट निकालें (Extract Text)</button>
+        </form>
+
+        <div id="status"></div>
+
+        <div class="result-container">
+            <h2>निकाला गया टेक्स्ट:</h2>
+            <textarea id="result-text" placeholder="आपका टेक्स्ट यहाँ दिखाई देगा..." readonly></textarea>
+            <button id="copy-button" style="display:none;">टेक्स्ट कॉपी करें</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
